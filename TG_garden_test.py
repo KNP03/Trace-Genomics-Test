@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Dec 23 11:10:19 2020
-Garden test : Takes in a Matrix as input and provides a whole number as output based on the calulations below. 
+Created on Wed Dec 23 11:10:19 2020 : Trace Genomics - GardenTest
+
+About the code : Takes in a Matrix as input and provides a whole number as output based on the calulations below. 
+Major idea of this code is from : https://github.com/ckcole/garden-test , 
+There were some changes made due errors in functions that returned None when some value was expected. 
+
 """
 
 def find_center(matrix):
