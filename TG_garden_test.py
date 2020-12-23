@@ -102,5 +102,5 @@ garden1 = [
 
 if __name__ == '__main__': #run the eat(matrix) function on the test
     test = eat(garden1)
-    print ('The number of carrots Bunny eats before falling asleep is {}'.format(test))
+    print ('The number of carrots Bunny eats before falling asleep is {}'.format(test)) #ouput for this is 27
 
