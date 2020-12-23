@@ -91,7 +91,7 @@ def eat(matrix):
     adj = get_largest_adjacent((x, y), matrix) 
     while adj is not None:
         carrots_eaten += matrix[adj[0]][adj[1]] #starts with 7 carrots
-        matrix[adj[0]][adj[1]] = 0 # adjacent ones are 8,0,3 
+        matrix[adj[0]][adj[1]] = 0 # adjacent ones are 8,0,3 , It therefore chooses 8
         adj = get_largest_adjacent(adj, matrix)
     return carrots_eaten
 
