@@ -87,11 +87,11 @@ def eat(matrix):
 
     '''
     x, y = find_center(matrix)
-    carrots_eaten = matrix[x][y]
-    adj = get_largest_adjacent((x, y), matrix)
+    carrots_eaten = matrix[x][y] #Starts at (1,2)  
+    adj = get_largest_adjacent((x, y), matrix) 
     while adj is not None:
-        carrots_eaten += matrix[adj[0]][adj[1]]
-        matrix[adj[0]][adj[1]] = 0
+        carrots_eaten += matrix[adj[0]][adj[1]] #starts with 7 carrots
+        matrix[adj[0]][adj[1]] = 0 # adjacent ones are 8,0,3 
         adj = get_largest_adjacent(adj, matrix)
     return carrots_eaten
 
