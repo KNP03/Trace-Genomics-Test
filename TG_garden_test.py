@@ -57,8 +57,8 @@ def get_largest_adjacent(cell, matrix):
     if there are no cells with carrots,  return None
     '''
 
-    x, y = cell
-    adj = [] #create an emplty list 
+    x, y = cell #(1,2)
+    adj = [] #create an empty list 
     #  Collect all cells to the right, left, above, and below current cell.
     if x != 0:
         adj.append((x - 1, y)) #append to the empty list
@@ -72,7 +72,7 @@ def get_largest_adjacent(cell, matrix):
     # return the cell with the most carrots.  if all cells are empty,  return None 
     # meaning the rabbit sleeps without eating carrots
     largest = 0
-    largest_cell = None
+    largest_cell = None #start with None so that we can condition that It largest_cell > None.
     for a_cell in adj:
         if matrix[a_cell[0]][a_cell[1]] > largest:
             largest = matrix[a_cell[0]][a_cell[1]]
